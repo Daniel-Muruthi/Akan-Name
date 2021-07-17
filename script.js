@@ -5,13 +5,14 @@ const female = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 //Beginning of the input section
 
 let dayInput = document.querySelector(".day").value;
-let monthInput =document.querySelector(".month").addEventListener('click', function (){
-    siku =//.getDate();
-    //.getMonth() + 1;
-    //.getFullYear();
-    let clientDate = new Date(tarehe);
-    let clientDay = date.toLocaleString('en-us', {weekday: 'long'});
-    alert(clientDay);
+let monthInput =document.querySelector(".submitBtn").addEventListener('click', function (){
+    const siku =document.querySelector(".month").getDate();
+    const mwezi =document.querySelector(".month").getMonth() + 1;
+    const mwaka = document.querySelector(".month").getFullYear();
+    // let compiledDate=`${siku}/${mwezi}/${mwaka}`;
+    let clientDate = new Date(Number(`${siku}/${mwezi}/${mwaka}`));
+    let clientDay = clientDate.toLocaleString('en-us', {weekday: 'long'});
+    console.log(clientDay);
 });
 //extracting day
 
