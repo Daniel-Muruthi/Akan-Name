@@ -1,0 +1,97 @@
+.akanBody{ 
+    background: url("./assets/background.jpg"); 
+    background-repeat:no-repeat; 
+    margin:20px;
+
+}
+.navbar{
+}
+.logo{
+    position:relative;
+    background-color: white;
+    border:1px solid white;
+    display:flex;
+    justify-content:space-between;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 25px;
+    box-shadow:0px 0px 4px 3px grey;
+    margin-top:10px;
+}
+.logo img{
+    align-self:center;
+    padding:5px;
+    border-radius: 30px;
+}
+.navText{
+    display:flex;
+    justify-content: space-around;
+    padding:20px;
+    width:60%;
+    border-radius: 30px;
+}
+.header{
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    padding:10px;
+}
+.headerTitle{
+    border:1px double white;
+    width:fit-content;
+}
+.intro{
+    display:flex;
+    padding:20px;
+}
+.akanImage{
+    padding:20px;
+    border:1px solid white;
+}
+.akanLine{
+    margin:20px;
+    border:1px solid white;
+}
+.akanText{
+    color:white;
+    padding:20px;
+    border:1px solid white;
+}
+.akanText h2{
+    text-align:center;
+}
+.calculator{
+    border:1px solid white;
+    color:white;
+}
+.calculator h1{
+    text-align:center;
+}
+.calcBody{
+    border:1px solid white;
+    width:80%;
+    height:300px;
+    padding:20px;
+    margin:30px;
+    margin-left:auto;
+    margin-right:auto;
+    background:white;
+}
+.calcDetails{
+    color:black;
+}
+.timeline{
+    color:black;
+    border:1px solid gold;
+    display:flex;
+    justify-content: space-between;
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+    }
+.day, .month, .year{
+    border:1px solid gold;
+    width:100%;
+    text-align:center;
+}
