@@ -60,11 +60,20 @@ document.querySelector('.inputDate').addEventListener("change", function(){
     timeInput();
 })
 
-sex
+// sex
 //getting client gender
 document.querySelector('.maleGender').addEventListener('click', function(){
-
+    return `male`;
 })
+document.querySelector('.femaleGender').addEventListener('click', function(){
+    return `female`;
+})
+
+//onclick for sex button-->
+// function muruthiFunction(){
+//     document.querySelector('.sexBtn').classList.toggle("show");
+// }
+//----->
 
 // let timeInput =document.querySelector(".submitBtn").addEventListener('click', function (){
 

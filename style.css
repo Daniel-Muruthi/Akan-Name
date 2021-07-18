@@ -98,6 +98,38 @@
 .calcInput{
     margin-left:20px;
 }
+.gender{
+    position:relative;
+    display:flex;
+    color:black;
+    width:70%;
+    border:1px solid red;
+    margin-left:auto;
+    margin-right:auto;
+}
+.gender:hover .binarygender{
+    display:block;
+}
+.sexBtn{
+    border:2px solid green;
+}
+.binaryGender{
+    display:none;
+    overflow:auto;
+    border:1px solid blue;
+    position:absolute;
+    z-index:1;
+}
+.binaryGender p{
+    background:grey;
+    display:block;
+    color:black;
+    text-decoration: None;;
+}
+.binaryGender > p:hover{
+    color:black;
+    display:block;
+}
 .timeline{
     color:black;
     border:1px solid white;
