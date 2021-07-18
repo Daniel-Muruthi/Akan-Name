@@ -48,23 +48,56 @@
                                 <h2>Enter Your Name 🗒 </h2>
                             </div>
                             <div class="calcInput">
-                                <input placeholder="enter your name"> <!--Name-->
+                                <input class = "jina" placeholder="enter your name"> <!--Name-->
+                            </div>
+                            <div class="gender">
+                                <button><h3>Sex</h3></button>
+                                <div class="binaryGender" required>
+                                    <h3 class="maleGender">Male</h3>
+                                    <h3 class="femaleGender" required>Female</h3>
+                                </div>
                             </div>
                         </div>
                         <div class="timeline">
-                            <h2>Enter You Birthday 📅 </h2>
+                            <h2>Enter Birthday 📅  : </h2>
                             <!-- <div class="day"><p><input type="number"  placeholder="Select Day"></p></div> -->
                             <div class="month">
-                                <p>
-                                    <input type="date"  placeholder="Select Month" required>
-                                </p>
-                                <button class ="submitBtn"><p>Submit</p></button>
+                                <form>
+                                    <input  class="inputDate" type="date"  placeholder="Select Month" min="1900-01/01"  required>
+                                    <!-- <button class ="submitBtn"><p>Submit</p></button> -->
+                                </form>
                             </div>
                             <!-- <div class="year"><p><input type="" placeholder="Select Year"></p></div> -->
+                        </div>
+                        <div class ="calcOutput">
+                            <h2>
+                                Your Results 🎊 🥇 :
+                            </h2>
+                            <div class="outputResults">
+                                <h2>
+                                
+                                </h2>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <script src="./script.js"></script>
         </form>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input>
