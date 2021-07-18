@@ -60,6 +60,12 @@ document.querySelector('.inputDate').addEventListener("change", function(){
     timeInput();
 })
 
+document.querySelector('.sexBtn').addEventListener("change", function(){
+    
+});
+
+
+
 // sex
 //getting client gender
 document.querySelector('.maleGender').addEventListener('click', function(){
