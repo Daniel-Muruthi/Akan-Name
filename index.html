@@ -48,14 +48,21 @@
                                 <h2>Enter Your Name 🗒 </h2>
                             </div>
                             <div class="calcInput">
-                                <input class = "jina" placeholder="enter your name"> <!--Name-->
+                                <input class = "jina" placeholder="enter your name" required> <!--Name-->
                             </div>
                         </div>
                         <div class="genderBody">
                             <div class="gender">
-                            <h3>Enter Your Gender : 🤵 👩‍🦰 : </h3>
-                            <input class="sexBtn" type="radio" name="Gender" value="male"> Male
-                            <input class="sexBtn" type="radio" name="Gender" value="female"> Female
+                            <h3>Enter Your Gender : 🤵 👩‍🦰 </h3>
+                            <div class="sexChoices" id="sexChoices" required>
+                                <input id ="sexBtn" onclick="" class="sexBtnMale" type="radio" name="Gender" value="male" checked="checked">
+                                <label for="sexBtn">Male</label>
+                                <input id ="sexBtn1" checked="checked" onclick="" class="sexBtnFemale" type="radio" name="Gender" value="female"> 
+                                <label for="sexBtn1">Female</label>
+                            </div>
+                            <div class="sexSubmit">
+                                <button type="submit">Select</button>
+                            </div>
                             <!-- <div class="binaryGender">
                                 <a type="radio" value="male" class="maleGender" name="Gender">Male</a>
                                 <a type="radio" value="female"class="femaleGender">Female</a>

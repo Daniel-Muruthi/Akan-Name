@@ -60,21 +60,40 @@ document.querySelector('.inputDate').addEventListener("change", function(){
     timeInput();
 })
 
-document.querySelector('.sexBtn').addEventListener("change", function(){
-    
+let genderValueCalculator = document.querySelector('.sexSubmit').addEventListener("change", function(){
+    let sexVerifier = function(){
+    let maleChecked=document.querySelector('Gender');
+    maleChecked.checked=true;
+    console.log(maleChecked);
+    let femaleChecked=document.querySelector('Gender');
+    femaleChecked.checked=true;
+    if (maleChecked.checked=true){
+        return console.log(`male`);
+    }else if (femaleChecked.checked=true){
+       return console.log(`female`);
+    }
+    else{
+        alert(`Input a sex`);
+    }
+}
+sexVerifier();
 });
+console.log (genderValueCalculator);
+
 
 
 
 // sex
 //getting client gender
-document.querySelector('.maleGender').addEventListener('click', function(){
-    return `male`;
-})
-document.querySelector('.femaleGender').addEventListener('click', function(){
-    return `female`;
-})
+// const malePerson=document.querySelector('.sexBtnMale').addEventListener('change', function(){
+//     return `male`;
+// })
+// console.log(malePerson);
+// const femalePerson=document.querySelector('.sexBtnFemale').addEventListener('change', function(){
 
+//     return `female`;
+// })
+// console.log(femalePerson);
 //onclick for sex button-->
 // function muruthiFunction(){
 //     document.querySelector('.sexBtn').classList.toggle("show");

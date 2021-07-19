@@ -111,10 +111,7 @@
     border:1px solid red;
 
 }
-.gender:hover .binarygender{
-    display:block;
-}
-.sexBtn{
+#sexBtn, #sexBtn1{
     border:2px solid green;
     /* width:20%; */
     padding:20px;
