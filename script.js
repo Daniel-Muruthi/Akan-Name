@@ -46,17 +46,17 @@ document.querySelector('.inputDate').addEventListener("change", function(){
         let siku =tarehe.getDate();
         let mwezi =tarehe.getMonth()+1;
         let mwaka = tarehe.getFullYear();
-        alert(`${siku}/${mwezi}/${mwaka}`);
-        alert(`The date is: ${siku}`)
+        // alert(`${siku}/${mwezi}/${mwaka}`);
+        // alert(`The date is: ${siku}`)
         let clientDay = tarehe.toLocaleString('en-us', {weekday: "long"});
-        alert((clientDay));
+        alert(`The Date you entered was on a: ${clientDay}`);
         let i = Number(mwezi);// passing the mwezi/month value to variable i
         let monthName = months[i]
         console.log(monthName);//accessing the months object
-        let akanMale= male[clientDay];
-        let akanFemale= female[clientDay];
-        console.log(akanMale);
-        console .log(akanFemale);
+        let akanMale= `Your Akan Name is${male[clientDay]}`;
+        let akanFemale= `Your Akan Name is ${female[clientDay]}`;
+        document.querySelector('.outputResults').textContent=akanMale;
+        document.querySelector('.outputResults').textContent=akanFemale;
 
     };
     timeInput();
