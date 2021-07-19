@@ -38,6 +38,8 @@ const months = {
 
 
 document.querySelector('.inputDate').addEventListener("change", function(){
+    var jina = document.querySelector('.jina').textContent;
+    console.log(jina);
     let dayInput = this.value;
     let tarehe= new Date(dayInput);
     let timeInput =function(){
@@ -60,25 +62,35 @@ document.querySelector('.inputDate').addEventListener("change", function(){
     timeInput();
 })
 
-let genderValueCalculator = document.querySelector('.sexSubmit').addEventListener("change", function(){
-    let sexVerifier = function(){
-    let maleChecked=document.querySelector('Gender');
-    maleChecked.checked=true;
-    console.log(maleChecked);
-    let femaleChecked=document.querySelector('Gender');
-    femaleChecked.checked=true;
-    if (maleChecked.checked=true){
-        return console.log(`male`);
-    }else if (femaleChecked.checked=true){
-       return console.log(`female`);
-    }
-    else{
-        alert(`Input a sex`);
-    }
+let genderReveal=(document.querySelector('.sexSubmit').textContent).toLowerCase;
+if (genderReveal=="male"){
+
+}else if(genderReveal=="female"){
+
+}else{
+    let output=document.querySelector('.outputResult').textContent;
+    
 }
-sexVerifier();
-});
-console.log (genderValueCalculator);
+
+// let genderValueCalculator = document.querySelector('.sexSubmit').addEventListener("change", function(){
+//     let sexVerifier = function(){
+//     let maleChecked=document.querySelector('Gender');
+//     maleChecked.checked=true;
+//     console.log(maleChecked);
+//     let femaleChecked=document.querySelector('Gender');
+//     femaleChecked.checked=true;
+//     if (maleChecked==true){
+//         return timeInput();
+//     }else if (femaleChecked==true){
+//        return timeInput();
+//     }
+//     else{
+//         alert(`Input a sex`);
+//     }
+// }
+// sexVerifier();
+// });
+// console.log (genderValueCalculator);
 
 
 
