@@ -36,7 +36,13 @@ let project = function(){
     
     document.getElementById("submitBody").addEventListener("click", function(){
         if(document.querySelector('input[name="gender"]:checked')==null){
-            alert(`⚠ You have not selected a gender ⚠ `);
+                alert(`⚠ You have not selected a gender ⚠ `);
+        }
+        if ((document.querySelector('input[class="inputDate"]')==false)){
+            while(true){
+                alert(`⚠ You have not inputed your Date ⚠ `);
+                break;
+            }
         }
         if (document.querySelector('input[value="male"]:checked')){
             const dayInput = (document.querySelector(".inputDate")).value;
@@ -52,8 +58,9 @@ let project = function(){
             return document.querySelector('.outputResults').textContent=akanMale;  
          }   
         if(document.querySelector('input[value="female"]:checked')){
-            var jina = document.querySelector("#jina").textContent;
-            console.log(jina);
+            // let jina = "";
+            // document.getElementById("jina").textContent=jina;
+            // console.log(jina);
             let dayInput = (document.querySelector(".inputDate")).value;
             let tarehe= new Date(dayInput);
             let siku =tarehe.getDate();
@@ -72,7 +79,6 @@ let project = function(){
 }
 project();
 
-document.querySelector(".retry").addEventListener("click", function(dan){
-    document.querySelector('form[name="muruthi"]').reset();
-    dan.preventDefault;
+document.querySelector('input[value="Try Again"]').addEventListener("click", function(){
+    document.querySelector('.myForm').reset();
 })
