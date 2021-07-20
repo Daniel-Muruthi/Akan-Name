@@ -62,7 +62,7 @@ let project = function(){
             // alert(`${siku}/${mwezi}/${mwaka}`);
             // alert(`The date is: ${siku}`)
             let clientDay = tarehe.toLocaleString('en-us', {weekday: "long"});
-            alert(`The Date you entered was on a: ${clientDay}`);
+            alert(`The Date you entered is : ${clientDay}`);
             let i = Number(mwezi);// passing the mwezi/month value to variable i
             let monthName = months[i];
             console.log(monthName);//accessing the months object
