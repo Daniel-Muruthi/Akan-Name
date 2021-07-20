@@ -16,11 +16,11 @@ Contains a name input, gender input, date entry and result section as well as a 
 
 ## Known Bugs
 
-Might not be fully responsive
+As you retry by hitting the button the weekday output is incremented by one.
 
 ## Technologies Used
 
-This project has been written using html, css and bootstrap languages
+This project has been written using html, css, javascript and bootstrap languages
 
 ## Support and contact details
 
