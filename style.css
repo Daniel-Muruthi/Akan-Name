@@ -45,6 +45,7 @@
     border:1px double white;
     width:fit-content;
     color:white;
+    background:rgba(0,0,0,0.3);
 }
 .intro{
     display:flex;
@@ -53,6 +54,7 @@
 .akanImage{
     padding:20px;
     border:1px solid white;
+    background:rgba(0,0,0,0.3);
 }
 .akanLine{
     margin:20px;
@@ -62,26 +64,48 @@
     color:white;
     padding:20px;
     border:1px solid white;
+    background:rgba(0,0,0,0.3);
+    font-size:large;
 }
-.akanText h2{
+.akanText h2, .akanText p{
     text-align:center;
 }
+.halfBody{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+.halfLine{
+    border:2px solid white;
+    width:80%;
+    background-color: white;
+    color:red;
+    border-radius: 5px;
+
+}
 .calculator{
-    border:1px solid white;
+    /* border:1px solid white; */
     color:white;
 }
 .calculator h1{
-    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    background:rgba(0,0,0,0.3);
+    padding:20px;
+    border:1px solid white;
+    width:max-content;
 }
 .calcBody{
     border:1px solid white;
     width:80%;
-    height:300px;
+    height:max-content;
     padding:20px;
     margin:30px;
     margin-left:auto;
     margin-right:auto;
     background:white;
+    box-shadow:0px 0px 4px 3px grey;
 }
 .nameDetails{
     width:70%;
@@ -89,7 +113,7 @@
     margin-right:auto;
     padding-top:20px;
     padding-bottom:20px;
-    border:1px solid blue;
+    box-shadow:0px 0px 2px 2px grey;
     display:flex;
 }
 .calcDetails{
@@ -108,8 +132,10 @@
     display:inline-block;
     color:black;
     width:70%;
-    border:1px solid red;
-
+    /* border:1px solid white; */
+    box-shadow:0px 0px 2px 2px grey;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 #sexBtn, #sexBtn1{
     border:2px solid green;
@@ -126,6 +152,8 @@
     margin-right:auto;
     /* padding:20px; */
     box-shadow:0px 0px 2px 2px grey;
+    padding-top:20px;
+    padding-bottom:20px;
     }
 .day, .month, .year{
     border:1px solid white;
@@ -142,6 +170,19 @@
     font-size:large;
     padding:5px;
 }
+.submitBody{
+    display:flex;
+    /* border:1px solid black; */
+    justify-content: center;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    color:black;
+    box-shadow:0px 0px 2px 2px grey;
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-left:5px;
+}
 .calcOutput{
     display:flex;
     border:1px solid black;
@@ -149,9 +190,29 @@
     margin-left:auto;
     margin-right:auto;
     color:black;
-    box-shadow:0px 0px 2px 2px grey;
+    box-shadow:0px 0px 2px 1px grey;
+    padding-top:40px;
+    padding-bottom:20px;
+    justify-content: center;
 }
 .outputResults{
-    border:1px solid blue;
+    /* border:1px solid brown; */
+    box-shadow:0px 0px 2px 1px brown;
+    width:40%;
     color:black;
+    font-size:x-large;
+    font-weight:bolder;
+    text-align:center;
+    margin-left:10px;
+}
+.btnReply{
+    display:flex;
+    justify-content: center;
+    padding-top:20px;
+    
+}
+.footer{
+    text-align:center;
+    color:brown;
+    font-size:larger;
 }
