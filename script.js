@@ -63,9 +63,6 @@ let project = function(){
             // alert(`The date is: ${siku}`)
             let clientDay = tarehe.toLocaleString('en-us', {weekday: "long"});
             alert(`The Date you entered is : ${clientDay}`);
-            let i = Number(mwezi);// passing the mwezi/month value to variable i
-            let monthName = months[i];
-            console.log(monthName);//accessing the months object
             // let akanMale= `Your Akan Name is${male[clientDay]}`;
             let akanFemale=` Your Akan Name is ${female[clientDay]}`
             return document.querySelector('.outputResults').textContent=akanFemale;
@@ -75,6 +72,7 @@ let project = function(){
 }
 project();
 
-// document.querySelector(".retry").addEventListener("click", function(){
-//     document.querySelector("muruthi").preventDefault;
-// })
+document.querySelector(".retry").addEventListener("click", function(dan){
+    document.querySelector('form[name="muruthi"]').reset();
+    dan.preventDefault;
+})
